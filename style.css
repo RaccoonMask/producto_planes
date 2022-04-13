@@ -109,7 +109,9 @@ h1{
     width: 100%;
     min-width: 320px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: rgb(240, 236, 236);
 }
 
@@ -170,28 +172,22 @@ h1{
     
 }
 .table-money p{
+    color: var(--text);
     width: 100%;
     /* padding: 10px 0px 10px 20px; */
     padding: 12px;
     font-size: var(--text-md);
-    /* border: .5px solid var(--text); */
-    color: var(--text);
 }
 .table-money p:nth-child(2n+1){
-    /* background-color: red; */
-    /* padding-left: 0; */
     text-align: left;
     border: 1px solid rgb(223, 218, 218);
     padding-right: 20px;
 }
 .table-money p:nth-child(2n){
-    /* background-color: red; */
-    /* padding-left: 0; */
     padding-left: 16px;
     text-align: left;
     border: 1px solid rgb(223, 218, 218);
     border-left: none;
-    /* font-size: var(--text-sm); */
 }
 .table-money p span{
     margin-left: 8px;
@@ -209,7 +205,72 @@ h1{
     font-weight: bold;
 }
 
+.motions{
+    background-color: #201E1C;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.super-container_motions{
+    width: 90%;
+    max-width: 900px;
+    min-width: 290px;
+    margin-top: 48px;
+}
+.logo-motions{
+    position: absolute;
+    width: 60px;
+    left: calc(50% - 30px);
+    top: -18px;
+}
+.motions-title{
+    font-size: var(--text-soflg);
+    line-height: 2.3rem;
+    color: var(--white);
+    text-align: center;
+}
+.motions-legend{
+    margin-top: 16px;
+    font-size: var(--text-sm);
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 16px;
+}
 
+.motions-element{
+    background-color: #282623;
+    padding: 18px 20px 22px 16px;
+    margin-bottom: 16px;
+}
+.motions-element h3{
+    color: var(--white);
+    font-size: var(--text-md);
+    margin-top: 8px;
+}
+.motions-element p{
+    margin-top: 8px;
+    color: var(--off-white);
+    font-size: var(--text-sm);
+}
+.mirror-design{
+    width: 100%;
+    position: relative;
+}
+.mirror-design img{
+    width: inherit;
+    /* height: 100%; */
+    object-fit: contain;
+}
+.mirror-design p{
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    left: calc(50% - 165px);
+    top: calc(50%);
+    color: var(--white);
+    font-weight: bold;
+}
 @media (min-width:427px){
     .container-img_header{
         margin: 52px 0;
